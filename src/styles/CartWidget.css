@@ -1,0 +1,17 @@
+.cart-widget {
+  font-size: 1.5rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.cart-count {
+  font-weight: bold;
+  margin-left: 5px;
+  color: black;
+}
+
+.cart-icon {
+  width: 30px;
+  height: 30px;
+}
