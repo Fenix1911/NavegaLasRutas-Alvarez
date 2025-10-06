@@ -2,7 +2,7 @@ import "../../styles/ItemListContainer.css";
 import { useGetCategories } from "../../hooks/useGetCategories";
 import CategoryItem from "../category-item/CategoryItem";
 
-const ItemListContainer = () => {
+const CategoriesListContainer = () => {
   const { categories, loading } = useGetCategories();
   console.log("Categories y loading desde hook: ", categories, loading);
 
@@ -19,4 +19,4 @@ const ItemListContainer = () => {
   }
 };
 
-export default ItemListContainer;
+export default CategoriesListContainer;
