@@ -10,7 +10,7 @@ const ItemListContainer = () => {
     return <p>Cargando categorías...</p>;
   } else {
     return (
-      <div className="">
+      <div className="category-container">
         {categories.map((category, index) => (
           <CategoryItem key={index} {...category} />
         ))}

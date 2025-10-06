@@ -2,9 +2,19 @@
   padding: 3rem;
   text-align: center;
   background-color: white;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
 }
 
 .item-list-container h2 {
   font-size: 2rem;
   color: black;
+}
+
+.category-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
 }
