@@ -5,7 +5,7 @@ import { NavLink } from "react-router-dom";
 const NavBar = () => {
   return (
     <nav className="navbar">
-      <h1 className="logo">Lo Quiero Ya</h1>
+      <h1 className="logo">Pokemon Store</h1>
       <ul className="nav-links">
         <NavLink to="/">
           <li>Inicio</li>
