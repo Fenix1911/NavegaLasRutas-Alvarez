@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "title": "Pikachu Holo Rare",
+    "categoryId": 1,
+    "price": 45.0,
+    "stock": 12,
+    "description": "Carta Pikachu edición coleccionista, acabado holográfico.",
+    "image": "../assets/pikachu_card.png",
+    "tags": ["pokemon", "cartas", "coleccion"]
+  },
+  {
+    "id": 2,
+    "title": "Charizard 1st Edition",
+    "categoryId": 1,
+    "price": 250.0,
+    "stock": 2,
+    "description": "Charizard primera edición en perfecto estado.",
+    "image": "../assets/charizard_card.png",
+    "tags": ["pokemon", "cartas", "vintage"]
+  },
+  {
+    "id": 3,
+    "title": "Camiseta Pikachu - Talle M",
+    "categoryId": 2,
+    "price": 20.0,
+    "stock": 30,
+    "description": "Camiseta oficial de Pikachu, algodón 100%.",
+    "image": "../assets/pikachu_shirt.png",
+    "tags": ["ropa", "pokemon", "indumentaria"]
+  },
+  {
+    "id": 4,
+    "title": "Gorra Pokéball",
+    "categoryId": 2,
+    "price": 12.5,
+    "stock": 25,
+    "description": "Gorra con diseño de Pokéball, ajuste trasero.",
+    "image": "../assets/pokeball_cap.png",
+    "tags": ["accesorios", "pokemon"]
+  },
+  {
+    "id": 5,
+    "title": "Peluche Eevee - 30cm",
+    "categoryId": 3,
+    "price": 18.0,
+    "stock": 15,
+    "description": "Peluche suave de Eevee, perfecto para niños y coleccionistas.",
+    "image": "../assets/eevee_plush.png",
+    "tags": ["peluche", "pokemon", "juguete"]
+  },
+  {
+    "id": 6,
+    "title": "Pack Peluches Starter (3 unidades)",
+    "categoryId": 3,
+    "price": 50.0,
+    "stock": 5,
+    "description": "Pack con 3 peluches sorpresa de la colección starter.",
+    "image": "../assets/plush_pack.png",
+    "tags": ["peluche", "pack", "pokemon"]
+  }
+]

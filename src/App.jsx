@@ -1,12 +1,13 @@
-import NavBar from "./components/NavBar";
-import ItemListContainer from "./components/ItemListContainer";
+import NavBar from "./components/nav-bar/NavBar";
+import ItemListContainer from "./components/item-list-container/ItemListContainer";
 import "./styles/global.css";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
   return (
     <div>
       <NavBar />
-      <ItemListContainer item="¡Bienvenido a mi tienda online!" />
+      <ItemListContainer />
     </div>
   );
 }

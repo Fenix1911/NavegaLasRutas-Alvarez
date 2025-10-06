@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "name": "Cartas",
+    "description": "Las ultimas cartas de Pokemon",
+    "image": "../assets/cloth.svg"
+  },
+  {
+    "id": 2,
+    "name": "Indumentaria Pokemon",
+    "description": "Camisetas de pokemon para todas las edades.",
+    "image": "../assets/react.svg"
+  },
+  {
+    "id": 3,
+    "name": "Peluches",
+    "description": "Todos los personajes de pokemon en peluches.",
+    "image": "../assets/sport.svg"
+  }
+]

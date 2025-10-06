@@ -1,5 +1,5 @@
-import "../styles/CartWidget.css";
-import miIcono from "../assets/cartIcon.svg";
+import "../../styles/CartWidget.css";
+import miIcono from "../../assets/cartIcon.svg";
 
 const CartWidget = () => {
   return (
