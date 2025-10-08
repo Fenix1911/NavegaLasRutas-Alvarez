@@ -1,6 +1,7 @@
 import { useGetProducts } from "../../hooks/useGetProducts";
 import ProductItem from "../product-item/ProductItem";
 import { useParams } from "react-router-dom";
+import "../../styles/ItemListContainer.css";
 const ProductsListContainer = () => {
   const { categoryId } = useParams();
   const { productsFilteredByCategory, loading } = useGetProducts(categoryId);

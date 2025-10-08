@@ -18,4 +18,19 @@
   flex-wrap: wrap;
   justify-content: center;
   gap: 1rem;
+  border-radius: 8px;
+  height: 40vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.product-image {
+  width: 200px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 1rem;
+  object-fit: cover;
 }

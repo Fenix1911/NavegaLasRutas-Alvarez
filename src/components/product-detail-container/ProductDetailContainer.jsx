@@ -1,6 +1,7 @@
 import { useGetProduct } from "../../hooks/useGetProduct";
 import ProductDetail from "../product-detail/ProductDetail";
 import { useParams } from "react-router-dom";
+import "../../styles/ProductDetailContainer.css";
 const ProductDetailContainer = () => {
   const { productId } = useParams();
   const { product, loading } = useGetProduct(productId);

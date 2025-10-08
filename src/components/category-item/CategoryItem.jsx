@@ -7,7 +7,7 @@ const CategoryItem = (category) => {
     <Link to={`/products/${category.id}`}>
       <Card>
         <div className="category-item">
-          <img src={category.image} alt={category.name} />
+          <img className="product-image" src={category.image} alt={category.name} />
           <p>{category.name}</p>
         </div>
       </Card>
