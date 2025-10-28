@@ -6,11 +6,13 @@ import Contact from "./components/contact/Contact";
 import ProductDetailContainer from "./components/product-detail-container/ProductDetailContainer";
 import "./styles/global.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { CartProvider } from "./context/CartContext";
 
 function App() {
   return (
     <div>
       <BrowserRouter>
+        <CartProvider>
         <NavBar />
         <Routes>
           <Route path="/" element={<Home />} />
@@ -25,6 +27,7 @@ function App() {
           />
           <Route path="/contact" element={<Contact />} />
         </Routes>
+        </CartProvider>
       </BrowserRouter>
     </div>
   );

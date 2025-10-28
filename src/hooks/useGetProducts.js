@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
-import productsData from "../data/products.json";
+import { db } from "../services/firebase";
+import { collection, getDocs, query, where } from "firebase/firestore";
 
 export const useGetProducts = (categoryId) => {
   const [productsFilteredByCategory, setProductsFilteredByCategory] = useState(
@@ -7,27 +8,24 @@ export const useGetProducts = (categoryId) => {
   );
   const [loading, setLoading] = useState(true);
 
+
   useEffect(() => {
-    const getProductsByCategory = () => {
-      const filteredProducts = productsData.filter(
-        (product) => product.categoryId === parseInt(categoryId)
-      );
-      return new Promise((resolve) => {
-        setTimeout(() => {
-          resolve(filteredProducts);
-        }, 2000);
-      });
-    };
-
     setLoading(true);
-
-    getProductsByCategory()
-      .then((response) => setProductsFilteredByCategory(response))
-      .catch((error) =>
-        console.error("Error filtering products by category:", error)
-      )
+    const prodCollection = collection(db, "productos");
+    const q = categoryId
+      ? query(prodCollection, where("categoryId", "==", categoryId))
+      : prodCollection;
+    getDocs(q)
+      .then((res) => {
+        const productsList = res.docs.map((doc) => {
+          return { id: doc.id, ...doc.data() };
+        });
+        setProductsFilteredByCategory(productsList);
+      })
+      .catch((error) => console.error("Error obteniendo productos:", error))
       .finally(() => setLoading(false));
   }, [categoryId]);
+
 
   return { productsFilteredByCategory, loading };
 };
