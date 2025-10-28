@@ -3,12 +3,13 @@ import miIcono from "../../assets/cartIcon.svg";
 import { useContext } from "react";
 import { CartContext } from "../../context/CartContext";
 
+
 const CartWidget = () => {
-  const { cart } = useContext(CartContext);
+  const {cart, cartQuantity}= useContext(CartContext)
   return (
     <div className="cart-widget">
       <img className="cart-icon" src={miIcono} />{" "}
-      <span className="cart-count">0</span>
+      <span className="cart-count">{cartQuantity()}</span>
     </div>
   );
 };

@@ -7,6 +7,7 @@ import ProductDetailContainer from "./components/product-detail-container/Produc
 import "./styles/global.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { CartProvider } from "./context/CartContext";
+import CartContainer from './components/cart-container/CartContainer.jsx'
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
             path="/product/:productId"
             element={<ProductDetailContainer />}
           />
+          <Route path='/cart' element={<CartContainer/>}/>
           <Route path="/contact" element={<Contact />} />
         </Routes>
         </CartProvider>
