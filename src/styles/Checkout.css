@@ -1,0 +1,72 @@
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="number"],
+select,
+textarea {
+  appearance: none;
+  border: 1px solid #e6e9ef;
+  padding: 10px 12px;
+  border-radius: 8px;
+  background: linear-gradient(180deg, var(--glass), var(--card));
+  font-size: 0.95rem;
+  color: var(--text);
+  transition: border-color 120ms ease, box-shadow 120ms ease;
+  outline: none;
+}
+textarea { min-height: 90px; resize: vertical; }
+
+input:focus,
+select:focus,
+textarea:focus {
+  border-color: var(--accent);
+  box-shadow: 0 4px 18px rgba(37,99,235,0.12);
+}
+
+label {
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+
+.formTitle {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: var(--text);
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.Complete {
+    
+    color: rgb(0, 0, 0);
+    background-color: #e0ffe0;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.checkoutContainer {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 2rem;
+    background: var(--card);
+    border-radius: 12px;
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.1);
+}
+
+.codigoSeguimiento {
+    margin-top: 1rem;
+    font-size: 1.1rem;
+    color: var(--text);
+}
+.volverHome {
+    display: inline-block;
+    margin-top: 2rem;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 8px;
+}
+
