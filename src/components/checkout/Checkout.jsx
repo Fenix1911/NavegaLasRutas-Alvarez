@@ -4,7 +4,7 @@ import { addDoc, collection, serverTimestamp } from 'firebase/firestore'
 import { db } from '../../services/firebase'
 import { Link } from 'react-router-dom'
 import EmptyCart from '../empty-cart/EmptyCart.jsx'
-import '../../styles/checkout.css'
+
 
 
 const Checkout = () => {
