@@ -12,7 +12,6 @@ const Contact = () => {
 
   function handleSubmit(e) {
     e.preventDefault();
-    // Fake send — in a real app you'd call an API
     console.log("Contact form submitted", form);
     setSent(true);
     setForm({ name: "", email: "", message: "" });

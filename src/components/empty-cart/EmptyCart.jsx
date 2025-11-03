@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import '../../styles/emptyCart.css'
+import '../../styles/EmptyCart.css'
 const EmptyCart = () => {
   return (
     <div className='emptyCartContainer'>
